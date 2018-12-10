@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-console": "off",
+    "react/no-unused-prop-types": [2, { "skipShapeProps": true }],
+    "comma-dangle": "off",
+    "no-underscore-dangle": [
+      "error",
+      { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }
+    ],
+    "react/jsx-filename-extension": "off",
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": false,
+        "object": false
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ]
+  }
+}
