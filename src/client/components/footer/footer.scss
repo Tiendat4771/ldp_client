@@ -1,0 +1,68 @@
+p {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+#footer {
+  margin-top: 50px;
+  margin-bottom: -150px;
+  clear: both;
+}
+
+.tomottoWrap {
+  position: relative;
+  background: #3ca2a2;
+}
+
+#tomotto {
+  text-align: center;
+  width: 960px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  line-height: 36px;
+  margin: auto;
+}
+
+.lookWrap {
+  padding-top: 50px;
+  position: relative;
+  background-color: #215a6d;
+  float: left;
+  width: 100%;
+}
+
+#look {
+  margin: auto;
+  width: 700px;
+}
+
+.section {
+  overflow: hidden;
+  float: left;
+  display: inline;
+  width: 160px;
+  margin: 0 15px 15px 0;
+  font: 10pt verdana;
+  line-height: 1.6em;
+}
+
+.section h3 {
+  font-weight: normal;
+  font: 12pt Georgia;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+.section a {
+  display: block;
+}
+
+.legality {
+  margin: auto;
+  width: 700px;
+  text-align: center;
+  clear: both;
+  font: 10pt verdana;
+  line-height: 2em;
+  padding: 40px 0 0 0;
+}

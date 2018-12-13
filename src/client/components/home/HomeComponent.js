@@ -6,6 +6,7 @@ import SliderComponent from '../slider/SliderComponent';
 import Product from '../product/ProductComponent';
 
 import products from '../../store/data';
+import './home.scss';
 
 const style = {
   main: {
@@ -41,15 +42,6 @@ class HomeComponent extends Component {
       autoplay: true,
       autoplaySpeed: 3000
     };
-
-    const settingsProducts = {
-      // dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 3,
-      centerPadding: '40px'
-    };
     return (
       <div style={style.main}>
         <Slider {...settingsSlider}>
@@ -64,12 +56,24 @@ class HomeComponent extends Component {
             {' '}
           </Typography>
           <Divider style={style.divider} />
-          <div>
-            <Slider {...settingsProducts}>
-              {productsData.map(product => (
-                <Product product={product} key={product.uuid} />
-              ))}
-            </Slider>
+          <div className="home_products">
+            {productsData.map(product => (
+              <Product product={product} key={product.uuid} />
+            ))}
+          </div>
+        </div>
+
+        <div style={{ marginTop: 40 }}>
+          <Typography variant="subtitle1" style={style.heading1}>
+            {' '}
+            HÀNG HOT
+            {' '}
+          </Typography>
+          <Divider style={style.divider} />
+          <div className="home_products">
+            {productsData.map(product => (
+              <Product product={product} key={product.uuid} />
+            ))}
           </div>
         </div>
       </div>

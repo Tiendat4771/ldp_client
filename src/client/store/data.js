@@ -2,7 +2,7 @@ import faker from 'faker';
 
 const products = [];
 
-for (let i = 0; i < 50; i += 1) {
+for (let i = 0; i < 4; i += 1) {
   const product = {};
   product.uuid = faker.random.uuid();
   product.name = faker.commerce.productName();
