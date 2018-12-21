@@ -7,6 +7,7 @@ import Divider from '@material-ui/core/Divider';
 import Slider from '@material-ui/lab/Slider';
 import dataProducts from '../../store/data';
 import Product from '../product/ProductComponent';
+import './products.scss';
 
 const styles = theme => ({
   root: {
@@ -166,13 +167,11 @@ class ProductsComponent extends Component {
                 </div>
               </Grid>
               <Grid item xs={10}>
-                <Grid container className={classes.demo} justify="center" spacing={Number(spacing)}>
+                <div className="products_page">
                   {products.map(item => (
-                    <Grid item xs={4} key={item.uuid}>
-                      <Product product={item} />
-                    </Grid>
+                    <Product product={item} key={item.uuid} />
                   ))}
-                </Grid>
+                </div>
               </Grid>
             </Grid>
           </Grid>
